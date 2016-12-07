@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from biryani.views import index,imp
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-]
+    url(r'^index/',index ),
+    url(r'^biryani/',imp ),    
+    ]
