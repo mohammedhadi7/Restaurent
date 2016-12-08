@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'drinks',
     'biryani',
     'tiffins',
+    'miday_brunch',
 ]
 
 MIDDLEWARE = [

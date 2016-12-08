@@ -17,15 +17,13 @@ from django.conf.urls import url
 from django.contrib import admin
 from biryani.views import index,imp
 from drinks.views import index,aaa
-from tiffins.views import index,tiffins
+from miday_brunch.views import index,brunch
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/', index),
     url(r'^biryani/',imp),
     url(r'^drinks/',aaa),
-    url(r'^tiffins/',tiffins ),
+    url(r'^midaybrunch/',brunch),
     
 ]
-
-
