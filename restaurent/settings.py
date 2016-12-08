@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'drinks',
+    'biryani',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'restaurent.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/mukesh/pro/abdul/Restaurent/Restaurent/templates'],
+        'DIRS': [ os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
