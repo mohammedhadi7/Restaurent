@@ -2,11 +2,7 @@
 <html>
 <head>
 <style> 
-table,th{
-border:1px solid black;
-border-collapse:collapse;
-background-color:lightblue;
-}
+
 footer{
 border:1px solid black;
 border-collapse:collapse;
@@ -66,6 +62,14 @@ color:#000000
 <a href="#"></a>MENU
 
 </div>
+<table>
+{% for item in midaybrunch %}
+<tr>
+<td>{{item.name}}</td><td>{{item.price}}</td><td>{{item.quantity}}</td>
+{% endfor %}
+</tr>
+</table>
+
 <li> ChickenCubes 15$</a></li>
 <li>KarthikSpanish Salad 10$">About me</a></li>
 <li>Strawberry 4$</a></li>
@@ -93,10 +97,13 @@ color:#000000
 Username:<input type="text" name="username"> Password: <input type="text" name="Password"> <input type="submit" value="Submit">
 </form>
 <br>
+
+
 <footer style="text-align:center" >
 Thanks for Coming, Visit Again
 </footer>
 
+<a href="/add_brunch">My Items List<a/>
 </body>
 </html>
 

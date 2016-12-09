@@ -17,7 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from biryani.views import index,imp
 from drinks.views import index,aaa
-from miday_brunch.views import index,brunch
+from miday_brunch.views import index,brunch,mbrunch
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -25,5 +25,6 @@ urlpatterns = [
     url(r'^biryani/',imp),
     url(r'^drinks/',aaa),
     url(r'^midaybrunch/',brunch),
+    url(r'^add_brunch/',mbrunch),
     
 ]
